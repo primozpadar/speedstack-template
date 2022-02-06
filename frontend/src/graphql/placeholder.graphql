@@ -1,0 +1,13 @@
+query Placeholders {
+  placeholders {
+    id
+    text
+  }
+}
+
+mutation CreatePlaceholder($data: NewPlaceholder!) {
+  createPlaceholder(newPlaceholder: $data) {
+    id
+    text
+  }
+}
